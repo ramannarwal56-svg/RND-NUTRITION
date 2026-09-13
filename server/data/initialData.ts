@@ -29,8 +29,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Ultra-pure cross-flow micro-filtered whey protein isolate engineered for rapid amino acid delivery and lean muscle synthesis. Zero fillers, ultra-low carbs, and instant mixability.",
     shortDescription: "28g Pure Isolate Protein, 6.3g BCAAs, 0g Added Sugar per scoop.",
     images: [
-      "/src/assets/images/rnd_whey_iso_1789227825582.jpg",
-      "/src/assets/images/rnd_hero_banner_1789192600800.jpg"
+      "./images/rnd_whey_iso_1789227825582.jpg",
+      "./images/rnd_hero_banner_1789192600800.jpg"
     ],
     price: 3999,
     salePrice: 3299,
@@ -99,7 +99,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Premium whey protein matrix blending Whey Protein Concentrate and Whey Protein Isolate. Delivers an optimal balance of sustained amino acid release and smooth creaminess.",
     shortDescription: "25g Protein, 5.5g BCAAs, 4g Glutamine. Delicious gourmet taste.",
     images: [
-      "/src/assets/images/rnd_whey_iso_1789227825582.jpg"
+      "./images/rnd_whey_iso_1789227825582.jpg"
     ],
     price: 2999,
     salePrice: 2499,
@@ -165,7 +165,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Pure unflavoured whey concentrate straight from prime dairy sources. Zero artificial flavours, zero sweeteners, and zero preservatives. Perfect for personalized shakes and recipes.",
     shortDescription: "24g Protein per 30g scoop. 100% Unsweetened clean nutrition.",
     images: [
-      "/src/assets/images/rnd_whey_iso_1789227825582.jpg"
+      "./images/rnd_whey_iso_1789227825582.jpg"
     ],
     price: 2199,
     salePrice: 1799,
@@ -230,7 +230,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "200-mesh pharmaceutical grade micronized creatine monohydrate. Replenishes cellular ATP, amplifies explosive strength, and promotes intracellular muscle cell volumization.",
     shortDescription: "100% Pure 200-Mesh Micronized Creatine. Zero additives.",
     images: [
-      "/src/assets/images/rnd_creatine_jar_1789227844026.jpg"
+      "./images/rnd_creatine_jar_1789227844026.jpg"
     ],
     price: 999,
     salePrice: 699,
@@ -294,7 +294,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Highly soluble creatine hydrochloride requiring zero loading phase and offering superior absorption with zero water bloat. Enhanced with AstraGin® for maximum nutrient uptake.",
     shortDescription: "Concentrated 1.5g serving. Zero bloat, zero loading needed.",
     images: [
-      "/src/assets/images/rnd_creatine_jar_1789227844026.jpg"
+      "./images/rnd_creatine_jar_1789227844026.jpg"
     ],
     price: 1499,
     salePrice: 1199,
@@ -357,7 +357,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "High-intensity pre-workout formula engineered for skin-splitting muscle pumps, laser mental focus, and fatigue-crushing stamina. Formulated with 300mg Caffeine Anhydrous, 6000mg L-Citrulline Malate, and 3200mg Beta-Alanine.",
     shortDescription: "6g Citrulline, 3.2g Beta-Alanine, 300mg Caffeine for extreme pumps & focus.",
     images: [
-      "/src/assets/images/rnd_preworkout_mock_1789227867221.jpg"
+      "./images/rnd_preworkout_mock_1789227867221.jpg"
     ],
     price: 1999,
     salePrice: 1499,
@@ -423,7 +423,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Caffeine-free pump catalyst designed for late-evening workouts or caffeine-sensitive athletes. Loaded with Nitrosigine®, pure L-Citrulline, and GlycerSize™ for extreme cellular hyperhydration.",
     shortDescription: "Zero caffeine. 8g Citrulline & Nitrosigine® for unmatched pumps.",
     images: [
-      "/src/assets/images/rnd_preworkout_mock_1789227867221.jpg"
+      "./images/rnd_preworkout_mock_1789227867221.jpg"
     ],
     price: 2199,
     salePrice: 1699,
@@ -488,7 +488,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "High-calorie heavyweight gainer for hardgainers struggling to pack on size. Combines fast and complex carbohydrates with multi-phase proteins, MCT healthy fats, and creatine.",
     shortDescription: "1250 Calories, 52g Multi-Phase Protein, 250g Clean Carbs per serving.",
     images: [
-      "/src/assets/images/rnd_mass_tub_1789227882336.jpg"
+      "./images/rnd_mass_tub_1789227882336.jpg"
     ],
     price: 3499,
     salePrice: 2899,
@@ -554,7 +554,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Calculated lean gainer providing a balanced 1:2 protein-to-carb ratio for athletes seeking quality muscle hypertrophy without excess adiposity.",
     shortDescription: "40g Isolate/Concentrate Blend, 80g Low-GI Carbs per serving.",
     images: [
-      "/src/assets/images/rnd_mass_tub_1789227882336.jpg"
+      "./images/rnd_mass_tub_1789227882336.jpg"
     ],
     price: 3199,
     salePrice: 2599,
@@ -619,7 +619,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Precision metabolic stimulator combining Green Tea Extract (EGCG 50%), L-Carnitine L-Tartrate, Capsicum Extract (Capsimax®), and Guggul to accelerate calorie expenditure and support fat oxidation during training.",
     shortDescription: "Capsimax® & L-Carnitine powered thermogenic. Clean appetite control.",
     images: [
-      "/src/assets/images/rnd_multivit_bot_1789227901192.jpg"
+      "./images/rnd_multivit_bot_1789227901192.jpg"
     ],
     price: 1599,
     salePrice: 1199,
@@ -686,7 +686,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Satisfying multi-layered crispy protein snack coated in dark Belgian cocoa with zero added sugar and 10g dietary fibre. Provides 20g of pure whey & milk protein crisps per bar.",
     shortDescription: "Box of 12 Bars | 20g Protein, 0g Added Sugar, 10g Prebiotic Fibre.",
     images: [
-      "/src/assets/images/rnd_protein_bars_1789192576924.jpg"
+      "./images/rnd_protein_bars_1789192576924.jpg"
     ],
     price: 1440,
     salePrice: 1199,
@@ -755,7 +755,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "High-potency daily micronutrient and immune support matrix custom-engineered for hard-training athletes. Features 100% RDA of 24 essential vitamins and chelated minerals, enhanced with Ashwagandha (KSM-66®), Grape Seed Extract, and Joint Support glucosamine.",
     shortDescription: "45 Active Ingredients, 100% RDA Vitamins, KSM-66® Ashwagandha.",
     images: [
-      "/src/assets/images/rnd_multivit_bot_1789227901192.jpg"
+      "./images/rnd_multivit_bot_1789227901192.jpg"
     ],
     price: 999,
     salePrice: 699,
@@ -821,7 +821,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     description: "Fermented vegan BCAAs in optimal 2:1:1 ratio infused with coconut water powder and pink salt electrolytes to sustain hydration and prevent intra-workout catabolism.",
     shortDescription: "7g BCAAs, 2.5g Glutamine, 1g Electrolytes for intra-workout hydration.",
     images: [
-      "/src/assets/images/rnd_preworkout_mock_1789227867221.jpg"
+      "./images/rnd_preworkout_mock_1789227867221.jpg"
     ],
     price: 1899,
     salePrice: 1399,
@@ -944,7 +944,7 @@ Whey Isolate undergoes Cross-Flow Microfiltration (CFM), extracting virtually al
     author: "RND Performance Team",
     date: "2026-06-15",
     readTime: "4 min read",
-    image: "/src/assets/images/rnd_whey_protein_1789192519698.jpg",
+    image: "./images/rnd_whey_protein_1789192519698.jpg",
     isFeatured: true,
     metaDescription: "A practical guide to selecting Whey Isolate vs Concentrate for muscle growth and optimal digestion in India."
   },
@@ -967,7 +967,7 @@ Creatine draws intracellular water into muscle cells. Aim for at least 3.5 to 4 
     author: "Raman Narwal",
     date: "2026-06-10",
     readTime: "5 min read",
-    image: "/src/assets/images/rnd_creatine_container_1789192533564.jpg",
+    image: "./images/rnd_creatine_container_1789192533564.jpg",
     isFeatured: false,
     metaDescription: "Learn how to take creatine monohydrate safely for strength, power, and muscle recovery."
   },
@@ -991,7 +991,7 @@ Creatine draws intracellular water into muscle cells. Aim for at least 3.5 to 4 
     author: "RND Performance Team",
     date: "2026-06-05",
     readTime: "4 min read",
-    image: "/src/assets/images/rnd_preworkout_tub_1789192545387.jpg",
+    image: "./images/rnd_preworkout_tub_1789192545387.jpg",
     isFeatured: false,
     metaDescription: "How to use pre-workout supplements properly, dosage precautions, and caffeine timing."
   }
@@ -1151,7 +1151,7 @@ export const INITIAL_DEMO_ORDERS: Order[] = [
       {
         productId: "rnd-whey-isolate",
         name: "RND Titanium 100% Whey Isolate",
-        image: "/src/assets/images/rnd_whey_protein_1789192519698.jpg",
+        image: "./images/rnd_whey_protein_1789192519698.jpg",
         flavour: "Belgian Chocolate",
         size: "2 kg (4.4 lbs)",
         price: 3299,
@@ -1162,7 +1162,7 @@ export const INITIAL_DEMO_ORDERS: Order[] = [
       {
         productId: "rnd-creatine-micronized",
         name: "RND Ultra-Pure Micronized Creatine Monohydrate",
-        image: "/src/assets/images/rnd_creatine_container_1789192533564.jpg",
+        image: "./images/rnd_creatine_container_1789192533564.jpg",
         flavour: "Unflavoured",
         size: "250 g",
         price: 699,

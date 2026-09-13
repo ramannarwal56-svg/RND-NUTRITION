@@ -70,9 +70,16 @@ export const HomePage: React.FC = () => {
       if (res.ok) {
         const data = await res.json();
         setProducts(data.products || []);
+      } else {
+        throw new Error('API not available');
       }
     } catch (e) {
-      console.warn("Products fetch failed:", e);
+      console.warn("Products fetch failed, falling back to static data for GitHub Pages:", e);
+      import('../../server/data/initialData').then(mod => {
+        setProducts(mod.INITIAL_PRODUCTS || []);
+      }).catch(err => {
+        console.error("Failed to load static fallback data:", err);
+      });
     } finally {
       setLoading(false);
     }
@@ -103,7 +110,7 @@ export const HomePage: React.FC = () => {
         item: {
           productId: 'rnd-whey-isolate',
           name: 'RND Titanium 100% Whey Isolate',
-          image: '/src/assets/images/rnd_whey_protein_1789192519698.jpg',
+          image: './images/rnd_whey_protein_1789192519698.jpg',
           flavour: 'Belgian Chocolate',
           size: '2 kg (4.4 lbs)',
           price: 3299,
@@ -119,7 +126,7 @@ export const HomePage: React.FC = () => {
         item: {
           productId: 'rnd-creatine-micronized',
           name: 'RND Ultra-Pure Micronized Creatine Monohydrate',
-          image: '/src/assets/images/rnd_creatine_container_1789192533564.jpg',
+          image: './images/rnd_creatine_container_1789192533564.jpg',
           flavour: 'Unflavoured',
           size: '250 g',
           price: 699,
@@ -196,13 +203,13 @@ export const HomePage: React.FC = () => {
   }, [products]);
 
   const categories = [
-    { name: 'Whey Protein', icon: Dumbbell, desc: 'Isolates & Pure Concentrates', count: '3 Products', image: '/src/assets/images/rnd_whey_protein_1789192519698.jpg' },
-    { name: 'Creatine', icon: Zap, desc: '200-Mesh Micronized ATP Booster', count: '2 Products', image: '/src/assets/images/rnd_creatine_container_1789192533564.jpg' },
-    { name: 'Pre-Workout', icon: Flame, desc: 'Explosive Nitric Oxide & Focus', count: '2 Products', image: '/src/assets/images/rnd_preworkout_tub_1789192545387.jpg' },
-    { name: 'Mass Gainer', icon: TrendingUp, desc: 'High Calorie Bulking Matrix', count: '2 Products', image: '/src/assets/images/rnd_mass_gainer_1789192555719.jpg' },
-    { name: 'Fat Burner', icon: Flame, desc: 'Thermogenic Metabolic Catalyst', count: '1 Product', image: '/src/assets/images/rnd_fat_burner_1789192565381.jpg' },
-    { name: 'Protein Bars', icon: Dumbbell, desc: '20g Gourmet Sugar-Free Snack', count: '1 Product', image: '/src/assets/images/rnd_protein_bars_1789192576924.jpg' },
-    { name: 'Multivitamins', icon: ShieldCheck, desc: 'High-Potency Micronutrients', count: '1 Product', image: '/src/assets/images/rnd_multivitamins_1789192587333.jpg' }
+    { name: 'Whey Protein', icon: Dumbbell, desc: 'Isolates & Pure Concentrates', count: '3 Products', image: './images/rnd_whey_protein_1789192519698.jpg' },
+    { name: 'Creatine', icon: Zap, desc: '200-Mesh Micronized ATP Booster', count: '2 Products', image: './images/rnd_creatine_container_1789192533564.jpg' },
+    { name: 'Pre-Workout', icon: Flame, desc: 'Explosive Nitric Oxide & Focus', count: '2 Products', image: './images/rnd_preworkout_tub_1789192545387.jpg' },
+    { name: 'Mass Gainer', icon: TrendingUp, desc: 'High Calorie Bulking Matrix', count: '2 Products', image: './images/rnd_mass_gainer_1789192555719.jpg' },
+    { name: 'Fat Burner', icon: Flame, desc: 'Thermogenic Metabolic Catalyst', count: '1 Product', image: './images/rnd_fat_burner_1789192565381.jpg' },
+    { name: 'Protein Bars', icon: Dumbbell, desc: '20g Gourmet Sugar-Free Snack', count: '1 Product', image: './images/rnd_protein_bars_1789192576924.jpg' },
+    { name: 'Multivitamins', icon: ShieldCheck, desc: 'High-Potency Micronutrients', count: '1 Product', image: './images/rnd_multivitamins_1789192587333.jpg' }
   ];
 
   const goals = [
@@ -305,7 +312,7 @@ export const HomePage: React.FC = () => {
               <div className="absolute inset-0 flex flex-col items-center justify-center animate-float">
                 <div className="relative group p-3 rounded-2xl bg-neutral-900/90 border border-[#D4AF37]/70 shadow-[0_20px_50px_rgba(0,0,0,0.9),0_0_35px_rgba(212,175,55,0.3)] backdrop-blur-md overflow-hidden">
                   <img
-                    src="/src/assets/images/rnd_whey_protein_1789192519698.jpg"
+                    src="./images/rnd_whey_protein_1789192519698.jpg"
                     alt="RND Whey Protein Premium Protein Powder"
                     referrerPolicy="no-referrer"
                     className="w-52 sm:w-64 h-56 sm:h-68 object-cover rounded-xl filter drop-shadow-[0_15px_20px_rgba(0,0,0,0.95)]"
@@ -468,7 +475,7 @@ export const HomePage: React.FC = () => {
         {/* Master 16:9 Cinematic Commercial Hero Banner */}
         <div className="relative rounded-3xl overflow-hidden border border-neutral-800 hover:border-[#D4AF37]/80 shadow-[0_20px_60px_rgba(0,0,0,0.9)] mb-10 group transition-colors duration-300">
           <img
-            src="/src/assets/images/rnd_hero_banner_1789192600800.jpg"
+            src="./images/rnd_hero_banner_1789192600800.jpg"
             alt="RND Commercial Supplement Photography Stack - Matte Black and Metallic Gold"
             referrerPolicy="no-referrer"
             className="w-full h-64 sm:h-96 lg:h-[480px] object-cover object-center group-hover:scale-102 transition-transform duration-700"

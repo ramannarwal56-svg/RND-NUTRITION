@@ -29,7 +29,7 @@ export const BlogPage: React.FC = () => {
       date: 'June 2026',
       author: 'Raman Narwal, RND Founder',
       excerpt: 'Debunking the loading phase myth, hydration protocols, and why 200-mesh ultra-micronized creatine absorbs faster without stomach cramps.',
-      image: '/src/assets/images/rnd_creatine_container_1789192533564.jpg',
+      image: './images/rnd_creatine_container_1789192533564.jpg',
       recommendedCategory: 'Creatine',
       content: [
         'Creatine monohydrate is the single most extensively researched sports supplement in human exercise history. It works by donating a high-energy phosphate molecule to ADP, regenerating ATP (adenosine triphosphate) during heavy 1–5 rep sets and explosive sprinting.',
@@ -46,7 +46,7 @@ export const BlogPage: React.FC = () => {
       date: 'May 2026',
       author: 'RND Research Desk',
       excerpt: 'Understanding lactose content, digestion rates, and why Whey Isolate delivers 90%+ protein density with virtually zero fat and carbs.',
-      image: '/src/assets/images/rnd_whey_protein_1789192519698.jpg',
+      image: './images/rnd_whey_protein_1789192519698.jpg',
       recommendedCategory: 'Whey Protein',
       content: [
         'Traditional Indian vegetarian diets (roti, dal, paneer, rice) are rich in carbohydrates and healthy fats, but frequently fall short of the optimal 1.6g–2.0g protein per kilogram of bodyweight needed for hypertrophy.',
@@ -62,7 +62,7 @@ export const BlogPage: React.FC = () => {
       date: 'May 2026',
       author: 'Raman Narwal',
       excerpt: 'How to avoid caffeine crashes, when to cycle off pre-workout stimulants, and the critical role of L-Citrulline in nitric oxide vasodilation.',
-      image: '/src/assets/images/rnd_preworkout_tub_1789192545387.jpg',
+      image: './images/rnd_preworkout_tub_1789192545387.jpg',
       recommendedCategory: 'Pre-Workout',
       content: [
         'Pre-workouts are designed to sharpen mental focus, boost blood flow to working muscles, and buffer lactic acid during high-volume training.',
@@ -78,7 +78,7 @@ export const BlogPage: React.FC = () => {
       date: 'April 2026',
       author: 'RND Quality & Compliance',
       excerpt: 'Counterfeit supplements remain a major issue in the Indian fitness market. Here is how RND protects every tub shipped from Gohana.',
-      image: '/src/assets/images/rnd_hero_banner_1789192600800.jpg',
+      image: './images/rnd_hero_banner_1789192600800.jpg',
       recommendedCategory: 'Whey Protein',
       content: [
         '1. Direct-to-Consumer Dispatches: Middlemen and unverified regional wholesalers are the most common source of adulterated tubs. RND ships 100% of orders directly from our Gohana central facility.',

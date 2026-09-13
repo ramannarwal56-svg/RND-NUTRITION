@@ -71,9 +71,18 @@ export const ShopPage: React.FC = () => {
           list = list.filter(p => p.flavour.toLowerCase().includes(selectedFlavour.toLowerCase()));
         }
         setProducts(list);
+      } else {
+        throw new Error('API not available');
       }
     } catch (e) {
-      console.warn("Catalog fetch failed:", e);
+      console.warn("Catalog fetch failed, using fallback:", e);
+      import('../../server/data/initialData').then(mod => {
+        let list = mod.INITIAL_PRODUCTS || [];
+        if (selectedCategory !== 'All') list = list.filter(p => p.category === selectedCategory);
+        if (searchQuery) list = list.filter(p => p.name.toLowerCase().includes(searchQuery.toLowerCase()));
+        if (inStockOnly) list = list.filter(p => p.stockQuantity > 0);
+        setProducts(list);
+      });
     } finally {
       setLoading(false);
     }

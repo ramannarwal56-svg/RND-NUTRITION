@@ -966,7 +966,7 @@ export function generateAuthenticitySealSVG(product: Product): string {
  * 8. Interactive 3D 360° Studio Mode
  */
 export function getProductMediaGallery(product: Product): ProductGalleryItem[] {
-  const frontImg = product.images?.[0] || '/src/assets/images/rnd_whey_protein_1789192519698.jpg';
+  const frontImg = product.images?.[0] || './images/rnd_whey_protein_1789192519698.jpg';
   const backLabelUrl = generateBackNutritionLabelSVG(product);
   const certUrl = generateCertificateSVG(product);
   const sideLabelUrl = generateSidePanelSVG(product);

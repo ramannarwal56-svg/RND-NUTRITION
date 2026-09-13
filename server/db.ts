@@ -61,23 +61,23 @@ function ensureDbLoaded(): DbSchema {
 
       // Sync commercial studio photography with consistent metallic gold RND logo
       const RND_STUDIO_IMAGES: Record<string, string[]> = {
-        "rnd-whey-isolate": ["/src/assets/images/rnd_whey_iso_1789227825582.jpg", "/src/assets/images/rnd_hero_banner_1789192600800.jpg"],
-        "rnd-gold-whey-blend": ["/src/assets/images/rnd_whey_iso_1789227825582.jpg"],
-        "rnd-raw-whey-80": ["/src/assets/images/rnd_whey_iso_1789227825582.jpg"],
-        "rnd-creatine-micronized": ["/src/assets/images/rnd_creatine_jar_1789227844026.jpg"],
-        "rnd-creatine-hcl": ["/src/assets/images/rnd_creatine_jar_1789227844026.jpg"],
-        "rnd-ignition-preworkout": ["/src/assets/images/rnd_preworkout_mock_1789227867221.jpg"],
-        "rnd-stim-free-pump": ["/src/assets/images/rnd_preworkout_mock_1789227867221.jpg"],
-        "rnd-colossus-mass-gainer": ["/src/assets/images/rnd_mass_tub_1789227882336.jpg"],
-        "rnd-mass-gainer-anabolic": ["/src/assets/images/rnd_mass_tub_1789227882336.jpg", "/src/assets/images/rnd_hero_banner_1789192600800.jpg"],
-        "rnd-lean-gainer-matrix": ["/src/assets/images/rnd_mass_tub_1789227882336.jpg"],
-        "rnd-mass-lean-gainer": ["/src/assets/images/rnd_mass_tub_1789227882336.jpg"],
-        "rnd-shred-thermo-cut": ["/src/assets/images/rnd_multivit_bot_1789227901192.jpg"],
-        "rnd-fatburner-shred-thermo": ["/src/assets/images/rnd_multivit_bot_1789227901192.jpg"],
-        "rnd-pro-crunch-bar-box": ["/src/assets/images/rnd_protein_bars_1789192576924.jpg"],
-        "rnd-protein-bars-box": ["/src/assets/images/rnd_protein_bars_1789192576924.jpg"],
-        "rnd-multivitamin-elite": ["/src/assets/images/rnd_multivit_bot_1789227901192.jpg"],
-        "rnd-bcaa-amino-recovery": ["/src/assets/images/rnd_preworkout_mock_1789227867221.jpg"]
+        "rnd-whey-isolate": ["./images/rnd_whey_iso_1789227825582.jpg", "./images/rnd_hero_banner_1789192600800.jpg"],
+        "rnd-gold-whey-blend": ["./images/rnd_whey_iso_1789227825582.jpg"],
+        "rnd-raw-whey-80": ["./images/rnd_whey_iso_1789227825582.jpg"],
+        "rnd-creatine-micronized": ["./images/rnd_creatine_jar_1789227844026.jpg"],
+        "rnd-creatine-hcl": ["./images/rnd_creatine_jar_1789227844026.jpg"],
+        "rnd-ignition-preworkout": ["./images/rnd_preworkout_mock_1789227867221.jpg"],
+        "rnd-stim-free-pump": ["./images/rnd_preworkout_mock_1789227867221.jpg"],
+        "rnd-colossus-mass-gainer": ["./images/rnd_mass_tub_1789227882336.jpg"],
+        "rnd-mass-gainer-anabolic": ["./images/rnd_mass_tub_1789227882336.jpg", "./images/rnd_hero_banner_1789192600800.jpg"],
+        "rnd-lean-gainer-matrix": ["./images/rnd_mass_tub_1789227882336.jpg"],
+        "rnd-mass-lean-gainer": ["./images/rnd_mass_tub_1789227882336.jpg"],
+        "rnd-shred-thermo-cut": ["./images/rnd_multivit_bot_1789227901192.jpg"],
+        "rnd-fatburner-shred-thermo": ["./images/rnd_multivit_bot_1789227901192.jpg"],
+        "rnd-pro-crunch-bar-box": ["./images/rnd_protein_bars_1789192576924.jpg"],
+        "rnd-protein-bars-box": ["./images/rnd_protein_bars_1789192576924.jpg"],
+        "rnd-multivitamin-elite": ["./images/rnd_multivit_bot_1789227901192.jpg"],
+        "rnd-bcaa-amino-recovery": ["./images/rnd_preworkout_mock_1789227867221.jpg"]
       };
 
       const EXCLUDED_PRODUCT_IDS = new Set([

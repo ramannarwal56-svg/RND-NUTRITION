@@ -195,7 +195,7 @@ export const CartPage: React.FC = () => {
                 {/* Image & Title */}
                 <div className="flex items-center gap-4 flex-1">
                   <img
-                    src={item.product?.images[0] || '/src/assets/images/rnd_whey_protein_1789192519698.jpg'}
+                    src={item.product?.images[0] || './images/rnd_whey_protein_1789192519698.jpg'}
                     alt={item.product?.name}
                     className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-xl bg-neutral-950 p-2 flex-shrink-0"
                   />

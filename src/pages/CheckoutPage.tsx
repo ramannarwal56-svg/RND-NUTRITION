@@ -595,7 +595,7 @@ export const CheckoutPage: React.FC = () => {
                 {cart.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 text-xs pb-2 border-b border-neutral-800/80">
                     <img
-                      src={item.product?.images[0] || '/src/assets/images/rnd_whey_protein_1789192519698.jpg'}
+                      src={item.product?.images[0] || './images/rnd_whey_protein_1789192519698.jpg'}
                       alt={item.product?.name}
                       className="w-12 h-12 object-contain rounded-lg bg-neutral-950 p-1 flex-shrink-0"
                     />

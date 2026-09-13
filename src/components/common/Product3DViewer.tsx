@@ -46,7 +46,7 @@ export const Product3DViewer: React.FC<Product3DViewerProps> = ({
   const lastPosRef = useRef<{ x: number; y: number; time: number }>({ x: 0, y: 0, time: 0 });
   const animFrameRef = useRef<number | null>(null);
 
-  const frontImg = customImage || product.images?.[0] || '/src/assets/images/rnd_whey_protein_1789192519698.jpg';
+  const frontImg = customImage || product.images?.[0] || './images/rnd_whey_protein_1789192519698.jpg';
   const backImg = generateBackNutritionLabelSVG(product);
   const certImg = generateCertificateSVG(product);
   const sideImg = generateSidePanelSVG(product);

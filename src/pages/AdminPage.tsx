@@ -756,7 +756,7 @@ export const AdminPage: React.FC = () => {
                     sku: `RND-${Date.now().toString().slice(-4)}`,
                     isBestSeller: false,
                     isFeatured: true,
-                    images: ['/src/assets/images/rnd_whey_protein_1789192519698.jpg'],
+                    images: ['./images/rnd_whey_protein_1789192519698.jpg'],
                     shortDescription: 'Formulated with ultra-pure ingredients.',
                     ingredients: '100% Whey Protein Isolate, Natural Cocoa, Digestive Enzymes.'
                   });
