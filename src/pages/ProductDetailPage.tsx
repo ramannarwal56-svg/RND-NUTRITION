@@ -162,9 +162,31 @@ export const ProductDetailPage: React.FC = () => {
         // Fetch reviews & related
         fetchReviews(data.id);
         fetchRelated(data.category, data.id);
+      } else {
+        throw new Error('API not available');
       }
     } catch (e) {
-      console.warn("Product detail fetch error:", e);
+      console.warn("Product detail fetch error, using fallback:", e);
+      import('../../server/data/initialData').then(mod => {
+        const data = mod.INITIAL_PRODUCTS.find(p => p.id === id || p.slug === id);
+        if (data) {
+          setProduct(data);
+          setSelectedFlavour(data.flavour);
+          setSelectedSize(data.weightOrPackSize);
+          setActiveMediaIndex(0);
+          setViewMode('2d');
+          if (data.category === 'Whey Protein') {
+            setSelectedFormulation(data.name.includes('Isolate') ? 'Iso-Zero' : 'Whey PR');
+          } else if (data.category === 'Creatine') {
+            setSelectedFormulation('Micronized 200 Mesh');
+          } else if (data.category === 'Pre-Workout') {
+            setSelectedFormulation('Ignition X');
+          } else {
+            setSelectedFormulation('Pro PR Matrix');
+          }
+          fetchRelated(data.category, data.id);
+        }
+      });
     } finally {
       setLoading(false);
     }
@@ -189,9 +211,15 @@ export const ProductDetailPage: React.FC = () => {
         const data = await res.json();
         const related = (data.products || []).filter((p: Product) => p.id !== currentId).slice(0, 3);
         setRelatedProducts(related);
+      } else {
+        throw new Error('API not available');
       }
     } catch (e) {
-      console.warn("Related fetch error:", e);
+      console.warn("Related fetch error, using fallback:", e);
+      import('../../server/data/initialData').then(mod => {
+        const related = mod.INITIAL_PRODUCTS.filter(p => p.category === category && p.id !== currentId).slice(0, 3);
+        setRelatedProducts(related);
+      });
     }
   };
 
